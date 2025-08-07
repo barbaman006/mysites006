@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My site pages</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    background: linear-gradient(135deg, #ffb347, #ffcc33, #4caf50);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem 4rem;
+    perspective: 1200px;
+  }
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-shadow:
+      0 0 8px #ffcc33,
+      0 0 15px #ffb347,
+      0 0 20px #ffcc33,
+      0 0 30px #4caf50;
+  }
+
+  /* Container for links */
+  #links-container {
+    width: 90vw;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 1.5rem;
+    z-index: 10;
+  }
+
+  /* Link cards */
+  .link-card {
+    background: rgba(255 255 255 / 0.1);
+    border-radius: 15px;
+    padding: 1.2rem 1rem;
+    box-shadow:
+      0 0 8px #ffcc33aa,
+      0 0 15px #ffb347aa,
+      0 0 25px #4caf50aa;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease,
+      color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .link-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+      radial-gradient(circle at center, #ffcc33, transparent 70%),
+      radial-gradient(circle at center, #4caf50, transparent 70%);
+    animation: glowRotate 6s linear infinite;
+    opacity: 0.6;
+    filter: blur(12px);
+    z-index: -1;
+    mix-blend-mode: screen;
+  }
+  @keyframes glowRotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+  .link-card:hover,
+  .link-card:focus {
+    box-shadow:
+      0 0 20px #ffcc33ff,
+      0 0 40px #ffb347ff,
+      0 0 60px #4caf50ff;
+    color: #fff;
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  /* Distinguish folders and 7z downloads */
+  .folder::after {
+    content: "📁";
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .download::after {
+    content: "⬇️";
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>My site pages</h1>
+
+<div id="links-container">
+  <!-- Folder links -->
+  <a href="0grand_website1/1spetsnaz_web1a_v3/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 0grand_website1">0grand_website1</a>
+  <a href="1born_the_baby1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1born_the_baby1a">1born_the_baby1a</a>
+  <a href="1links_drive155a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1links_drive155a">1links_drive155a</a>
+  <a href="1lola_site1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1lola_site1a">1lola_site1a</a>
+  <a href="1lumbersite1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1lumbersite1a">1lumbersite1a</a>
+  <a href="1matrix_fx1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1matrix_fx1a">1matrix_fx1a</a>
+  <a href="1movie123/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1movie123">1movie123</a>
+  <a href="1pies1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1pies1a">1pies1a</a>
+  <a href="1retro_http166a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1retro_http166a">1retro_http166a</a>
+  <a href="1slav_computer1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1slav_computer1a">1slav_computer1a</a>
+  <a href="1sneaky_search155a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1sneaky_search155a">1sneaky_search155a</a>
+  <a href="https://ldg527wd5j5ocegkgt3nonmai3iisgfmh4qxm7lybvh6asvohgia.arweave.net/WM3dfsPqeuEQyjT21zWARtCJGKw_IXZ9eA1P4EquOZA/" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1some_nes_games155a">1some_nes_games155a</a>
+  <a href="1statement166a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1statement166a">1statement166a</a>
+  <a href="1statement226a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1statement226a">1statement226a</a>
+  <a href="1thorn_barba1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1thorn_barba1a">1thorn_barba1a</a>
+  <a href="1thornfk_vs1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1thornfk_vs1a">1thornfk_vs1a</a>
+  <a href="1thorn_web155a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1thorn_web155a">1thorn_web155a</a>
+  <a href="1trippyroad155a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1trippyroad155a">1trippyroad155a</a>
+  <a href="1trip_thorn1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1trip_thorn1a">1trip_thorn1a</a>
+  <a href="1vector1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1vector1a">1vector1a</a>
+  <a href="1webbuggys1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1webbuggys1a">1webbuggys1a</a>
+  <a href="1web_inferno155a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1web_inferno155a">1web_inferno155a</a>
+  <a href="1web_snaps166a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1web_snaps166a">1web_snaps166a</a>
+  <a href="1wildsite1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1wildsite1a">1wildsite1a</a>
+  <a href="1willd_and_squishy_inside1a/2025-06-24 16-11-38.mp4" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1willd_and_squishy_inside1a">1willd_and_squishy_inside1a</a>
+  <a href="1zoodream1a/index.html" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder 1zoodream1a">1zoodream1a</a>
+  <a href="https://skfb.ly/pyJuu" class="link-card folder" target="_blank" rel="noopener noreferrer" aria-label="Open folder object1hotel">object1hotel</a>
+
+  <!-- Downloadable 7z files -->
+  <a href="1invitelist123_arch.7z" class="link-card download" download aria-label="Download 1invitelist123_arch.7z">1invitelist123_arch.7z</a>
+  <a href="1retro_http166a_arch.7z" class="link-card download" download aria-label="Download 1retro_http166a_arch.7z">1retro_http166a_arch.7z</a>
+  <a href="1born_the_baby1a_arch.7z" class="link-card download" download aria-label="Download 1born_the_baby1a_arch.7z">1born_the_baby1a_arch.7z</a>
+  <a href="1links_drive155a_arch.7z" class="link-card download" download aria-label="Download 1links_drive155a_arch.7z">1links_drive155a_arch.7z</a>
+  <a href="1lnk_games155a_arch.7z" class="link-card download" download aria-label="Download 1lnk_games155a_arch.7z">1lnk_games155a_arch.7z</a>
+  <a href="1lola_site1a_arch.7z" class="link-card download" download aria-label="Download 1lola_site1a_arch.7z">1lola_site1a_arch.7z</a>
+  <a href="1lumbersite1a_arch.7z" class="link-card download" download aria-label="Download 1lumbersite1a_arch.7z">1lumbersite1a_arch.7z</a>
+  <a href="1matrix_fx1a_arch.7z" class="link-card download" download aria-label="Download 1matrix_fx1a_arch.7z">1matrix_fx1a_arch.7z</a>
+  <a href="1movie123_arch.7z" class="link-card download" download aria-label="Download 1movie123_arch.7z">1movie123_arch.7z</a>
+  <a href="1pies1a_arch.7z" class="link-card download" download aria-label="Download 1pies1a_arch.7z">1pies1a_arch.7z</a>
+  <a href="1slav_computer1a_arch.7z" class="link-card download" download aria-label="Download 1slav_computer1a_arch.7z">1slav_computer1a_arch.7z</a>
+  <a href="1sneaky_search155a_arch.7z" class="link-card download" download aria-label="Download 1sneaky_search155a_arch.7z">1sneaky_search155a_arch.7z</a>
+  <a href="1some_nes_games155a_arch.7z" class="link-card download" download aria-label="Download 1some_nes_games155a_arch.7z">1some_nes_games155a_arch.7z</a>
+  <a href="1statement166a_arch.7z" class="link-card download" download aria-label="Download 1statement166a_arch.7z">1statement166a_arch.7z</a>
+  <a href="1statement226a_arch.7z" class="link-card download" download aria-label="Download 1statement226a_arch.7z">1statement226a_arch.7z</a>
+  <a href="1thorn_barba1a_arch.7z" class="link-card download" download aria-label="Download 1thorn_barba1a_arch.7z">1thorn_barba1a_arch.7z</a>
+  <a href="1thornfk_vs1a_arch.7z" class="link-card download" download aria-label="Download 1thornfk_vs1a_arch.7z">1thornfk_vs1a_arch.7z</a>
+  <a href="1thorn_web155a_arch.7z" class="link-card download" download aria-label="Download 1thorn_web155a_arch.7z">1thorn_web155a_arch.7z</a>
+  <a href="1trippyroad155a_arch.7z" class="link-card download" download aria-label="Download 1trippyroad155a_arch.7z">1trippyroad155a_arch.7z</a>
+  <a href="1trip_thorn1a_arch.7z" class="link-card download" download aria-label="Download 1trip_thorn1a_arch.7z">1trip_thorn1a_arch.7z</a>
+  <a href="1vector1a_arch.7z" class="link-card download" download aria-label="Download 1vector1a_arch.7z">1vector1a_arch.7z</a>
+  <a href="1webbuggys1a_arch.7z" class="link-card download" download aria-label="Download 1webbuggys1a_arch.7z">1webbuggys1a_arch.7z</a>
+  <a href="1web_inferno155a_arch.7z" class="link-card download" download aria-label="Download 1web_inferno155a_arch.7z">1web_inferno155a_arch.7z</a>
+  <a href="1web_snaps166a_arch.7z" class="link-card download" download aria-label="Download 1web_snaps166a_arch.7z">1web_snaps166a_arch.7z</a>
+  <a href="1wildsite1a_arch.7z" class="link-card download" download aria-label="Download 1wildsite1a_arch.7z">1wildsite1a_arch.7z</a>
+  <a href="1willd_and_squishy_inside1a_arch.7z" class="link-card download" download aria-label="Download 1willd_and_squishy_inside1a_arch.7z">1willd_and_squishy_inside1a_arch.7z</a>
+  <a href="1zoodream1a_arch.7z" class="link-card download" download aria-label="Download 1zoodream1a_arch.7z">1zoodream1a_arch.7z</a>
+  <a href="object1hotel_arch.7z" class="link-card download" download aria-label="Download object1hotel_arch.7z">object1hotel_arch.7z</a>
+  <a href="1demo_fuckers155a_arch.7z" class="link-card download" download aria-label="Download 1demo_fuckers155a_arch.7z">1demo_fuckers155a_arch.7z</a>
+  <a href="1elder_daycare_ukraine1a_arch.7z" class="link-card download" download aria-label="Download 1elder_daycare_ukraine1a_arch.7z">1elder_daycare_ukraine1a_arch.7z</a>
+  <a href="1funny_search1a_arch.7z" class="link-card download" download aria-label="Download 1funny_search1a_arch.7z">1funny_search1a_arch.7z</a>
+  <a href="1glasses1a_arch.7z" class="link-card download" download aria-label="Download 1glasses1a_arch.7z">1glasses1a_arch.7z</a>
+  <a href="1gpt_draw_gadget1a_arch.7z" class="link-card download" download aria-label="Download 1gpt_draw_gadget1a_arch.7z">1gpt_draw_gadget1a_arch.7z</a>
+  <a href="1hotel1a_arch.7z" class="link-card download" download aria-label="Download 1hotel1a_arch.7z">1hotel1a_arch.7z</a>
+  <a href="1invitelist123.7z" class="link-card download" download aria-label="Download 1invitelist123.7z">1invitelist123.7z</a>
+</div>
+
+</body>
+</html>
